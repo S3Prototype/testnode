@@ -9,6 +9,5 @@ app.listen(port, () => {
 
 
 app.get('/', (req, res) =>{
-    res.send("Welcome to the home page");
-    res.send("Port is" + port);
+    res.send("Welcome to the home page. Port is" + port);
 });
