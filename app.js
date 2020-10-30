@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const homepage = require('index.html');
 
 const port = process.env.port || 8080;
 
@@ -9,5 +10,5 @@ app.listen(port, () => {
 
 
 app.get('/', (req, res) =>{
-    res.send("If you are My Love or My Queen or My Princess, hello. Port is " + port + "<img src='https://imgur.com/a/bPsCDL1' />");
+    res.send(homepage);
 });
